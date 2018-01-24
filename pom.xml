@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.akka</groupId>
+	<artifactId>http-test</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>http-test</name>
+	
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	    <akka.scala.version>2.12</akka.scala.version>
+	    <akka.version>2.5.9</akka.version>
+	    <akka.http.version>10.1.0-RC1</akka.http.version>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.typesafe.akka</groupId>
+			<artifactId>akka-actor_${akka.scala.version}</artifactId>
+			<version>${akka.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-http -->
+		<dependency>
+		    <groupId>com.typesafe.akka</groupId>
+		    <artifactId>akka-http_${akka.scala.version}</artifactId>
+		    <version>${akka.http.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-http-core -->
+		<!-- <dependency>
+		    <groupId>com.typesafe.akka</groupId>
+		    <artifactId>akka-http-core_${akka.scala.version}</artifactId>
+		    <version>${akka.http.version}</version>
+		</dependency>	 -->			
+		<!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-stream -->
+		<dependency>
+		    <groupId>com.typesafe.akka</groupId>
+		    <artifactId>akka-stream_${akka.scala.version}</artifactId>
+		    <version>${akka.version}</version>
+		</dependency>
+		
+	</dependencies>
+</project>
