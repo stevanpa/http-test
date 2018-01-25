@@ -14,6 +14,7 @@ import akka.http.javadsl.server.Route;
 import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Flow;
 
+// mvn exec:java -Dexec.mainClass="org.akka.HttpServerActor" // -Dexec.args="arg0 arg1"
 public class HttpServerActor extends AllDirectives {
 	
 	public static void main(String[] args) throws Exception {
